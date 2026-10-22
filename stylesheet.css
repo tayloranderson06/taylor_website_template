@@ -34,8 +34,8 @@
     --cream-text: #f6ead0;
     --medium-dark-text: #052b64;
     --main-background: #99CDEA;
-    --header-background: #1C1B4B;
-    --intro-background: #6F989B;
+    --header-background: #155583;
+    --intro-background: #75bdd5;
     --dark-background: #1C1B4B;
     --portrait-background: #F18C7E;
     --landscape-background: #F18C7E;
@@ -135,6 +135,11 @@ header {
 header h1 {
     color: var(--cream-text);
     font-weight: 600;
+    font-size: 6rem;
+    position: relative;
+    padding-left: 0;
+    text-align: center;
+    margin: 0 auto;
 }
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -150,9 +155,11 @@ header {
 .topnav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
     gap: 0.5rem 2rem;
     width: 100%;
+    padding-right: 0;
 }
 
 .topnav a {
@@ -479,15 +486,15 @@ header {
 .single-item__h2 {
     grid-area: single-item__h2;
     color: var(--cream-text);
-    font-weight: 400;
-    font-size: 5rem;
+    font-weight: 500;
+    font-size: 8rem;
 }
 
 .single-item__h3 {
     grid-area: single-item__h3;
     font-weight: 300;
-    font-size: 2rem;
-    line-height: 2.8rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
 }
 
 .single-item__introduction {
@@ -506,6 +513,10 @@ header {
     grid-area: single-item__block-two;
 }
 
+.single-item__h4 {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
 .single-item__h4 {
     font-weight: 500;
     font-size: 1.3rem;
@@ -742,7 +753,7 @@ header {
 
 .contact-form__heading {
     grid-area: contact-heading;
-    color: var(--dark-text);
+    color: var(--cream-text);
     font-weight: 400;
     font-size: 2.6rem;
 }
@@ -753,7 +764,7 @@ header {
 
 .contact-form h3,
 .contact-form p {
-    color: var(--dark-text);
+    color: var(--cream-text);
     font-weight: 500;
 }
 
